@@ -1,0 +1,41 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'bg-dark': '#0A0A0A',
+        'bg-medium': '#1A1A1A',
+        'bg-light': '#2A2A2A',
+        'border-dark': '#3A3A3A',
+        'text-primary': '#FFFFFF',
+        'text-secondary': '#CCCCCC',
+        'text-tertiary': '#999999',
+        'accent-orange': '#FF8C00',
+        'accent-yellow': '#FFD700',
+        'red-error': '#EF4444',
+        'edit-profile': '#ADB8D6',
+        'edit-profile-hover': '#9AA6C4',
+        'change-password': '#DDFCBE',
+        'change-password-hover': '#CDEB9C',
+        'bg-dark': '#0A0A0A',
+        'bg-medium': '#1A1A1A',
+        'bg-light': '#2A2A2A',
+        'border-dark': '#3A3A3A',
+        'text-primary': '#FFFFFF',
+        'text-secondary': '#CCCCCC',
+        'text-tertiary': '#999999',
+        'btn-primary': '#F1EACE',
+        'btn-primary-hover': '#ADB8D6',
+        'btn-secondary': '#ADB8D6',
+        'btn-secondary-hover': '#F1EACE',
+        'red-error': '#EF4444',
+        'online-green': '#10B981',
+      },
+    },
+  },
+  plugins: [],
+}

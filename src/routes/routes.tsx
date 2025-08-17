@@ -21,6 +21,14 @@ import { MentorDashboardHome } from "../pages/mentor/mentorDashboardHome/dashboa
 import { ReviewsRatings } from "../pages/mentor/reviews&Ratings/reviews&Ratings";
 import { Bookings } from "../pages/mentor/bookings/bookings";
 
+//Admin
+import { AdminDashboardPage } from "../pages/admin/adminDashboardPage/adminDashboardPage";
+import { AdminDashboardHome } from "../pages/admin/adminDashboardHome/adminDashboardHome";
+import { UserManagement } from "../pages/admin/userManagement/userManagement";
+import { MentorManagement } from "../pages/admin/mentorManagement/mentorManagement";
+import { ViewManageBookings } from "../pages/admin/viewManageBookings/viewManageBookings";
+import { FinancialOverview } from "../pages/admin/financialOverview/FinancialOverview";
+
 
 const AppRoutes: React.FC = () => {
   return (
@@ -53,6 +61,16 @@ const AppRoutes: React.FC = () => {
         <Route path="messages" element={<MessagesPage />} />
         <Route path="wallet" element={<WalletPage />} />
       </Route> 
+
+      {/* Admin Dashboard Routes */}
+      
+      <Route path="/admin-Dashboard" element={<AdminDashboardPage />}>
+        <Route path="Admin-DashboardHome" element={<AdminDashboardHome />} />
+        <Route path="user-management" element={<UserManagement />} />
+        <Route path="mentor-management" element={<MentorManagement />} />
+        <Route path="view-manage-bookings" element={<ViewManageBookings />} />
+        <Route path="financial-overview" element={<FinancialOverview />} />
+      </Route>
 
     </Routes>
   );
